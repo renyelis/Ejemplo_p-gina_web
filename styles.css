@@ -268,3 +268,151 @@ text-align: center;
   -webkit-border-radius:50%;
   width:90px;
 }
+
+/* Add padding around the footer as well */
+
+footer {
+  background-color: turquoise;
+  padding: 20px 10px;
+}
+
+/* Sets all link texts to white and puts margin to the left and right */
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: turquoise;
+  border-bottom: 2px solid turquoise;
+}
+
+/* Tablets y pantallas más pequeñas */
+
+@media(max-width: 768px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+/* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+/* Esto restablece el ancho del contendor de la imagen y agrega margen a la izquierda 
+*/ 
+
+.image {
+  width: 600px;
+  margin-left: 80px;
+}
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+  flex-direction: column;
+}
+
+.stats {
+  text-align: center;
+}
+
+/* Asegura que cada sección en las estadísticas no exceda el ancho del elemento padre. */
+
+.stat {
+  width: 100%;
+  padding-right: 80px;
+}
+
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+    background-color: transparent;
+    border:3px solid turquoise;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 270px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+
+/* Dispositivos móviles */
+@media(max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+
+/* Cambia la alineación. El logo del título se queda en la parte superior, los enlaces de navegación ahora se muestran debajo*/
+
+.navbar .flex {
+  flex-direction: column;
+}
+
+
+/* Cuando pasamos encima el ratón, retienen el texto blanco y cambia el borde a negro */
+
+.navbar a:hover {
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+
+/* Establecer el color púrpura para el fondo de los enlaces de navegación, redondear las esquinas de los bordes y darle algo de espaciado*/
+
+.navbar ul {
+  background: turquoise;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+
+/* Alinear el texto al centro */
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+
+/* Reducir el tamaño de la fuente */
+
+.little-info {
+  font-size: 13px;
+}
+
+
+/* Reducir el ancho de la imágen */
+
+.image {
+  width: 350px;
+  margin-left: 70px;
+}
+
+.stat {
+  margin-bottom: 40px;
+}
+
+
+/* Mover el círculo una vez más */
+
+.circle {
+    background-color: transparent;
+    border:3px solid turquoise;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+}
